@@ -95,7 +95,13 @@ body {
 }
 
 .first-sections {
-    background-color: #2F303A;
+    background: rgba(47, 48, 58, 0.4);
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: #2F303A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     text-align: center;    
     padding-top: 200px;
     padding-bottom: 200px;
@@ -276,9 +282,12 @@ line-height: 1.19;
     color: var(--accent-color);
 }
 
+.icon__massage:focus,
+.icon__massage:hover,
 .link:hover,
 .link:focus {
     color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .link-footer {
@@ -296,7 +305,8 @@ line-height: 1.19;
 }
 
 .link {
-    
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -322,8 +332,7 @@ line-height: 1.19;
 .contact-nav {
     display: flex;
     list-style: none;
-    margin-left: auto;
-  
+    margin-left: auto;   
 }
 
 .link-second {
@@ -396,3 +405,79 @@ background-color: var(--primary-bg-color);
     padding: 30px;
     text-align: center;
 }
+
+.icon__massage {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon__phone {    
+    width: 10px;
+    height: 16px;
+    margin-right: 10px ;
+    fill: currentColor;
+}
+
+.icon__our__differences {
+width: 270px;
+margin-bottom: 30px;
+}
+    
+.social__list {
+    margin-top: 16px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.client__item {
+    border: 1px solid #AFB1B8;
+    padding: 16px 32px;
+    border-radius: 3px;
+}
+
+.client__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+/* .icon__social:hover {
+    fill: var(--primary-bg-color); 
+} */
+
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--primary-text-color);
+}
+
+.icon__social {
+    fill: var(--primary-text-color);        
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:hover .icon__social, 
+.social__link:focus .icon__social {
+    background-color: var(--accent-color);    
+    color: var(--primary-bg-color);
+}
+
